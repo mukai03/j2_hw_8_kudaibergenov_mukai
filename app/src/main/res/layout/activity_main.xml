@@ -13,6 +13,7 @@
         android:layout_margin="16dp"
         android:text="Equal"
         app:cornerRadius="24dp"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/orange"

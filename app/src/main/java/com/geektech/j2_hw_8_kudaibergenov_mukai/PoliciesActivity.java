@@ -21,7 +21,7 @@ public class PoliciesActivity extends AppCompatActivity {
         textView = findViewById(R.id.text_view2);
         String string = getIntent().getStringExtra("key");
         button = findViewById(R.id.btn);
-        Log.d("shamal", "OnCreare Result");
+        Log.d("shamal", "OnCreate PoliciesActivity");
         textView.setText(string);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,36 +38,36 @@ public class PoliciesActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("shamal", "onStart MainActivity");
+        Log.d("shamal", "onStart PoliciesActivity");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("shamal", "onResume MainActivity");
+        Log.d("shamal", "onResume PoliciesActivity");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("shamal", "onPause MainActivity");
+        Log.d("shamal", "onPause PoliciesActivity");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d("shamal", "onRestart MainActivity");
+        Log.d("shamal", "onRestart PoliciesActivity");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("shamal", "onStop MainActivity");
+        Log.d("shamal", "onStop PoliciesActivity");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("shamal", "onDestroy MainActivity");
+        Log.d("shamal", "onDestroy PoliciesActivity");
     }
 }

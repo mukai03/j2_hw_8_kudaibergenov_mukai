@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-
+            btn_next.setVisibility(View.GONE);
         }
 
         private void setNumber(String number) {
@@ -178,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
                     result = 0;
                     secondVar = Integer.parseInt(textView.getText().toString());
                     if(isOperationClick = true){
-                        findViewById(R.id.button).setVisibility(View.VISIBLE);
                         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -193,30 +192,34 @@ public class MainActivity extends AppCompatActivity {
                     switch (operation) {
                         case "+":
                             result = firstVar + secondVar;
+                            textView.setText(result.toString());
                             break;
                         case "-":
                             result = firstVar - secondVar;
+                            textView.setText(result.toString());
                             break;
                         case "/":
                             result = firstVar / secondVar;
+                            textView.setText(result.toString());
                             break;
                         case "*":
                             result = firstVar * secondVar;
+                            textView.setText(result.toString());
                             break;
 
                         case "%":
                             result = (secondVar * 100) / firstVar;
+                            textView.setText(result.toString());
                             break;
 
                         case "+/-":
                             result = firstVar -= secondVar;
+                            textView.setText(result.toString());
                             break;
 
                     }
-                    textView.setText(result.toString());
-                    break;
+                    btn_next.setVisibility(View.VISIBLE);
             }
-
         }
 
     }
