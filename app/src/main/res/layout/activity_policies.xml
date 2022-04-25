@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PoliciesActivity">
+
+    <TextView
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/grey_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawableStart="@drawable/ic_menu"
+        android:drawableTop="@drawable/ic_fire"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Policies"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"/>
+
+    <LinearLayout
+        android:id="@+id/liner_layout"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/policies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="350dp"
+            android:backgroundTint="@color/grey"
+            android:gravity="fill_vertical"
+            app:cornerRadius="24dp"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="Policy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="350dp"
+            android:backgroundTint="@color/grey"
+            android:gravity="fill_vertical"
+            app:cornerRadius="24dp"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="Prooduct Cotegory"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="350dp"
+            android:backgroundTint="@color/grey"
+            android:gravity="fill_vertical"
+            app:cornerRadius="24dp"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="Origin Country"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="350dp"
+            android:backgroundTint="@color/grey"
+            android:gravity="fill_vertical"
+            app:cornerRadius="24dp"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="Brand"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/liner_layout"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Current Policies"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:id="@+id/btn"
+        android:backgroundTint="@color/purpose"
+        app:cornerRadius="24dp"
+        android:text="Export as CSV"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="100dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
